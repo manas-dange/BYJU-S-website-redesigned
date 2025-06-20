@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - BYJU'S</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="lms-bg">
+  <div class="sidebar">
+    <a href="index.html">
+      <img src="assets/byjus_logo.png" alt="BYJU'S Logo" class="logo sidebar-logo">
+    </a>
+    <nav>
+      <a href="dashboard.html" class="sidebar-link active">Dashboard</a>
+      <a href="assignments.html" class="sidebar-link">Assignments</a>
+      <a href="quiz.html" class="sidebar-link">Quiz</a>
+      <a href="schedule.html" class="sidebar-link">Schedule</a>
+      <a href="resources.html" class="sidebar-link">Resources</a>
+      <a href="notes.html" class="sidebar-link">Notes</a>
+      <a href="discussion.html" class="sidebar-link">Discussion</a>
+      <a href="recordings.html" class="sidebar-link">Recordings</a>
+      <a href="badges.html" class="sidebar-link">Motivational Badges</a>
+    </nav>
+  </div>
+  <main class="dashboard-main">
+    <h1>Welcome to your Dashboard</h1>
+    <section class="dashboard-section" id="recent-assignments">
+      <h2>Recent Assignments</h2>
+      <ul id="assignments-list"></ul>
+    </section>
+    <section class="dashboard-section" id="upcoming-events">
+      <h2>Upcoming Events</h2>
+      <ul id="events-list"></ul>
+    </section>
+    <section class="dashboard-section" id="dashboard-graphs">
+      <div class="dashboard-graphs-row">
+        <div class="dashboard-graph-container dashboard-card">
+          <h2>Assignments Submitted</h2>
+          <canvas id="assignmentsBarGraph" width="320" height="200"></canvas>
+        </div>
+        <div class="dashboard-graph-container dashboard-card">
+          <h2>Performance</h2>
+          <div class="dashboard-graph-legend">
+            <span class="legend-item"><span class="legend-color study"></span> Assignment Submission Performance</span>
+            <select class="dashboard-dropdown" id="performance-period">
+              <option>Monthly</option>
+              <option>Weekly</option>
+            </select>
+          </div>
+          <div class="dashboard-speedometer-area">
+            <canvas id="dashboardSpeedometer" width="220" height="120"></canvas>
+            <div class="dashboard-grade-label">Your Grade: <span id="dashboard-grade-value">8.966</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dashboard-section" id="recent-downloads">
+      <h2>Recent Downloads</h2>
+      <ul id="downloads-list"></ul>
+    </section>
+    <section class="dashboard-section" id="dashboard-progress">
+      <h2>Progress Overview</h2>
+      <div class="progress-bar-block">
+        <div class="progress-label">Assignments Completed</div>
+        <div class="progress-bar"><div class="progress-bar-inner assignments-progress"></div></div>
+      </div>
+      <div class="progress-bar-block">
+        <div class="progress-label">Course Progress</div>
+        <div class="progress-bar"><div class="progress-bar-inner course-progress"></div></div>
+      </div>
+    </section>
+  </main>
+  <script src="js/sidebar.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html> 

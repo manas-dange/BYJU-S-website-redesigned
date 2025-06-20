@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYJU'S - Landing Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;600;500;400&display=swap" rel="stylesheet">
+  <style>
+    body.landing-bg { font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif; }
+  </style>
+</head>
+<body class="landing-bg">
+  <div id="bg-animated"></div>
+  <header class="landing-navbar">
+    <div class="navbar-left">
+      <a href="index.html">
+        <img src="assets/byjus_logo.png" alt="BYJU'S Logo" class="logo">
+      </a>
+    </div>
+    <nav class="navbar-center">
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+    </nav>
+    <div class="navbar-right">
+      <a href="login.html" class="btn nav-signin micro-btn">Sign In</a>
+      <a href="register.html" class="btn nav-signup micro-btn">Sign Up</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="hero-left">
+        <h1>Make Learning Smarter, Easier, <br>and More Fun with Byju's!</h1>
+        <p class="hero-sub">Personalized education at your fingertips. Join thousands of learners using Byju's to master concepts through interactive video lessons, live classes, and feedback.</p>
+        <a href="login.html" class="btn hero-getstarted">Get Started</a>
+      </div>
+      <div class="hero-right">
+        <img src="assets/hero_image.png" alt="Hero Illustration" class="hero-illustration-placeholder">
+      </div>
+    </section>
+    <section class="stats-section">
+      <div class="stat-card">
+        <div class="stat-icon"> <span class="material-icons">person</span> </div>
+        <div class="stat-value">150K+</div>
+        <div class="stat-label">Active Users</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"> <span class="material-icons">location_on</span> </div>
+        <div class="stat-value">500+</div>
+        <div class="stat-label">Expert Educators</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"> <span class="material-icons">menu_book</span> </div>
+        <div class="stat-value">200+</div>
+        <div class="stat-label">Course Modules</div>
+      </div>
+    </section>
+    <section class="pricing-section" id="pricing">
+      <div class="section-container">
+        <h2 class="pricing-title">Choose Your Plan</h2>
+        <p class="pricing-sub">Pick the plan that best suits your goals and unlock exclusive learning benefits.</p>
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <div class="pricing-illustration"></div>
+            <div class="pricing-plan">Free Plan</div>
+            <ul class="pricing-features">
+              <li>Access to selected courses</li>
+              <li>Basic progress tracking</li>
+              <li>Limited discussion access</li>
+            </ul>
+            <div class="pricing-price">Free</div>
+            <button class="btn pricing-select">Select</button>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-illustration"></div>
+            <div class="pricing-plan">Standard Plan</div>
+            <ul class="pricing-features">
+              <li>All course access</li>
+              <li>Smart dashboard and analytics</li>
+              <li>Full discussion board access</li>
+              <li>Downloadable resources</li>
+              <li>Assignment tracking</li>
+            </ul>
+            <div class="pricing-price">Rs. 499 <span class="pricing-duration">/ mo</span></div>
+            <button class="btn pricing-select">Select</button>
+          </div>
+          <div class="pricing-card premium">
+            <div class="pricing-illustration"></div>
+            <div class="pricing-plan">Premium Plan</div>
+            <ul class="pricing-features">
+              <li>Everything in Standard</li>
+              <li>Encrypted Connection</li>
+              <li>Doubt-solving sessions</li>
+              <li>Full session recordings</li>
+              <li>Learning calendar</li>
+            </ul>
+            <div class="pricing-price">Rs. 699 <span class="pricing-duration">/ mo</span></div>
+            <button class="btn pricing-select">Select</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features" id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Interactive Learning Management System</li>
+        <li>Assignments and Quizzes with Instant Feedback</li>
+        <li>Personal Notes and Downloadable Resources</li>
+        <li>Integrated Calendar for Schedules</li>
+      </ul>
+    </section>
+    <section class="testimonials" id="testimonials">
+      <div class="section-container">
+        <h2>Testimonials</h2>
+        <div class="testimonial-carousel">
+          <button class="testimonial-arrow" id="testimonial-prev">&#8592;</button>
+          <div class="testimonial-content">
+            <div id="testimonial-text"></div>
+            <div id="testimonial-author"></div>
+          </div>
+          <button class="testimonial-arrow" id="testimonial-next">&#8594;</button>
+        </div>
+        <div class="testimonial-dots" id="testimonial-dots"></div>
+      </div>
+    </section>
+    <section class="about-byjus" id="about">
+      <div class="section-container">
+        <h2>About BYJU'S</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>BYJU'S is India's largest ed-tech company and the creator of India's most loved school learning app. Our mission is to make learning fun, engaging, and accessible for all students.</p>
+          </div>
+          <img src="assets/about.png" alt="About BYJU'S Illustration" class="about-image-placeholder">
+        </div>
+      </div>
+    </section>
+    <section class="learning-together">
+      <div class="section-container">
+        <h2>Learning Together</h2>
+        <div class="learning-content">
+          <img src="assets/world.png" alt="Learning Together Illustration" class="learning-image-placeholder">
+          <div class="learning-text">
+            <p>Collaborate, share, and grow with your peers. BYJU'S encourages group learning and teamwork to help you achieve your academic goals together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/testimonials.js"></script>
+  <script src="js/bg-animated.js"></script>
+</body>
+</html> 

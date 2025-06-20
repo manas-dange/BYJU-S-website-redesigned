@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - BYJU'S</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="lms-bg">
+  <div class="sidebar">
+    <a href="index.html">
+      <img src="assets/byjus_logo.png" alt="BYJU'S Logo" class="logo sidebar-logo">
+    </a>
+    <nav>
+      <a href="dashboard.html" class="sidebar-link">Dashboard</a>
+      <a href="assignments.html" class="sidebar-link">Assignments</a>
+      <a href="quiz.html" class="sidebar-link active">Quiz</a>
+      <a href="schedule.html" class="sidebar-link">Schedule</a>
+      <a href="resources.html" class="sidebar-link">Resources</a>
+      <a href="notes.html" class="sidebar-link">Notes</a>
+      <a href="discussion.html" class="sidebar-link">Discussion</a>
+      <a href="recordings.html" class="sidebar-link">Recordings</a>
+      <a href="badges.html" class="sidebar-link">Motivational Badges</a>
+    </nav>
+  </div>
+  <main class="quiz-main">
+    <div class="quiz-card">
+      <div class="quiz-timer-bar" id="quiz-timer-bar"></div>
+      <div class="quiz-header">
+        <h1>Quiz</h1>
+        <div id="quiz-progress"></div>
+      </div>
+      <div id="quiz-options" class="quiz-options-container">
+        <div class="quiz-option-card" data-quiz="0">
+          <h3>Physics Quiz 1</h3>
+          <p>Test your knowledge of mechanics, waves, and modern physics</p>
+        </div>
+        <div class="quiz-option-card" data-quiz="1">
+          <h3>Chemistry Quiz 1</h3>
+          <p>Challenge yourself with organic, inorganic, and physical chemistry</p>
+        </div>
+        <div class="quiz-option-card" data-quiz="2">
+          <h3>Maths Quiz 1</h3>
+          <p>Solve problems in calculus, algebra, and coordinate geometry</p>
+        </div>
+        <div class="quiz-option-card" data-quiz="3">
+          <h3>Mixed Bag Quiz 1</h3>
+          <p>A combination of Physics, Chemistry, and Mathematics questions</p>
+        </div>
+        <div class="quiz-option-card" data-quiz="4">
+          <h3>Mixed Bag Quiz 2</h3>
+          <p>Another set of mixed questions to test your overall knowledge</p>
+        </div>
+      </div>
+      <button id="start-quiz" class="btn primary">Start Quiz</button>
+      <div id="quiz-container">
+        <div id="quiz-content" style="display:none;"></div>
+        <div id="quiz-result" style="display:none;"></div>
+      </div>
+    </div>
+  </main>
+  <script src="js/sidebar.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html> 

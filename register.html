@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - BYJU'S</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-bg">
+  <div class="login-page-container">
+    <div class="login-form-section">
+      <div class="login-container">
+        <p class="signup-link" style="text-align: right; margin-bottom: 20px;">Already have an account? <a href="login.html" style="color: var(--byjus-purple); text-decoration: none; font-weight: bold;">Login</a></p>
+        <h2 style="text-align: center;">Sign Up</h2>
+        <form id="registerForm" class="register-form">
+          <div class="form-row">
+            <div class="input-group-half">
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" placeholder="" required>
+            </div>
+            <div class="input-group-half">
+              <label for="lastName">Last name</label>
+              <input type="text" id="lastName" placeholder="" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-group-half">
+              <label for="school">School</label>
+              <input type="text" id="school" placeholder="" required>
+            </div>
+            <div class="input-group-half">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-group-full">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" placeholder="" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-group-half">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="" required>
+            </div>
+            <div class="input-group-half">
+              <label for="confirmPassword">Confirm password</label>
+              <input type="password" id="confirmPassword" placeholder="" required>
+            </div>
+          </div>
+          <button type="button" class="login-btn" onclick="window.location.href='index.html'">Register</button>
+        </form>
+      </div>
+    </div>
+    <div class="login-illustration-section">
+      <img src="assets/register_image.png" alt="Register Illustration" class="login-illustration">
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html> 

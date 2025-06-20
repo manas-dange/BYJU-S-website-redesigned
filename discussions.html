@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussions - BYJU'S LMS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html">
+                <img src="assets/byjus_logo.png" alt="BYJU'S Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="resources.html">Resources</a>
+            <a href="notes.html">Notes</a>
+            <a href="badges.html">Motivational Badges</a>
+            <a href="discussions.html" class="active">Discussions</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="discussions-header">
+            <h1>Discussions</h1>
+            <button id="new-discussion-btn" class="btn primary">Start New Discussion</button>
+        </div>
+
+        <div id="new-discussion-form" class="discussion-form" style="display: none;">
+            <h2>Create New Discussion</h2>
+            <form id="discussion-form">
+                <div class="form-group">
+                    <label for="discussion-title">Title</label>
+                    <input type="text" id="discussion-title" required placeholder="Enter discussion title">
+                </div>
+                <div class="form-group">
+                    <label for="discussion-category">Category</label>
+                    <select id="discussion-category" required>
+                        <option value="">Select a category</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="general">General</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="discussion-content">Content</label>
+                    <textarea id="discussion-content" required placeholder="Write your discussion content here..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn" onclick="cancelNewDiscussion()">Cancel</button>
+                    <button type="submit" class="btn primary">Post Discussion</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="discussions-filters">
+            <div class="search-box">
+                <input type="text" id="discussion-search" placeholder="Search discussions...">
+            </div>
+            <div class="filter-options">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="general">General</option>
+                </select>
+                <select id="sort-filter">
+                    <option value="recent">Most Recent</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="comments">Most Comments</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="discussions-list" class="discussions-list">
+            <!-- Discussions will be loaded here dynamically -->
+        </div>
+    </div>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/discussions.js"></script>
+</body>
+</html> 

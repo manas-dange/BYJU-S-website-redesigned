@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - BYJU'S</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-bg">
+  <div class="login-page-container">
+    <div class="login-form-section">
+      <div class="login-container">
+        <h2>Login</h2>
+        <button class="google-login-btn">
+          <img src="https://www.google.com/favicon.ico" alt="Google Logo" class="google-icon">
+          <span>Sign in with Google</span>
+        </button>
+        <div class="or-separator"><span>or</span></div>
+        <form id="loginForm" class="login-form">
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="username" placeholder="email address" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="password" required>
+          </div>
+          <div class="form-options">
+            <label class="remember-me">
+              <input type="checkbox" id="rememberMe">
+              Remember Me
+            </label>
+            <a href="#" class="forgot-password">Forget Password?</a>
+          </div>
+          <button type="button" class="login-btn" onclick="window.location.href='dashboard.html'">Login</button>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="register.html">Signup</a></p>
+      </div>
+    </div>
+    <div class="login-illustration-section">
+      <!-- Illustration will go here -->
+      <img src="assets/login_image.png" alt="Login Illustration" class="login-illustration">
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+</body>
+</html> 
